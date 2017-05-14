@@ -37,7 +37,7 @@ public class PopupActivity extends Activity
     public static String user_input ="";
     public static String app_name = "";
     public static String string;
-    static final String API_KEY = "&apikey=240b9794-10cf-4371-afdd-3f2fdad16080";
+    static final String API_KEY = "&apikey=YOUR_API_KEY";
     static final String API_URL = "https://api.havenondemand.com/1/api/sync/extractconcepts/v1?text=";
     String url = "";
     String jsonStr = "";

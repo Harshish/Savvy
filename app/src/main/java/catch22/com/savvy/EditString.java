@@ -40,7 +40,12 @@ public class EditString
         apps.add(messaging);
         apps.add(launcher);
     }
-    public static List<String> task= new ArrayList<String>(Arrays.asList("group","admin","message","status","contact","dp","number","account","admin group","friend","notification tone","message tone","tone","alert tone","message starred","list message star","web whatsapp","photo","video","multiple photo","dial speed","speeddial","call history","someone","sim","sms","ringtone","contacts","format name","call vibration","balance","conversation","chat","message new","smiley","emoticon","face sad","picture","video","audio","delivery report","wallpaper","brightess","data","wifi","internet","bluetooth"));
+    public static List<String> task= new ArrayList<String>(Arrays.asList("group","admin","message","status","contact","dp","number"
+            ,"account","admin group","friend","notification tone","message tone","mute","name","tone","alert tone","message starred"
+            ,"list message star","web whatsapp","photo","video","multiple photo","dial speed","speeddial","call history","someone"
+            ,"sim","sms","ringtone","contacts","format name","call vibration","balance","conversation","chat","message new","smiley"
+            ,"emoticon","face sad","picture","video","audio","delivery report","wallpaper","brightess","data","wifi","internet"
+            ,"bluetooth"));
 
     private static List<String> wordsOfTheMessage; //ik
     private static int numberOfWordsInTheMessage, numberOfTasksInUsersQuery;
@@ -128,6 +133,7 @@ public class EditString
             tasksInUsersQuery.clear();
 
             task_selected = spaceSeparatedTasksInUsersQuery.toString().trim();
+            task_selected = task_selected.toLowerCase();
             Log.i("TASK SELECTED", task_selected);
             spaceSeparatedTasksInUsersQuery.setLength(0);
         }

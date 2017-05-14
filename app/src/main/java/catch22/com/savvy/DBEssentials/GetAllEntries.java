@@ -39,7 +39,7 @@ public class GetAllEntries{
             m.insertEntry("whatsapp", "delete", "account",7);
             m.insertEntry("whatsapp", "create", "group",8);
             m.insertEntry("whatsapp", "make", "group",8);
-            m.insertEntry("whatsapp", "make", "admin group",47);//
+            m.insertEntry("whatsapp", "make", "admin group",47);
             m.insertEntry("whatsapp", "mute", "group",9);
             m.insertEntry("whatsapp", "exit", "group",10);
             m.insertEntry("whatsapp", "leave", "group",10);
@@ -153,7 +153,7 @@ public class GetAllEntries{
             m.insertEntry("launcher","switch","bluetooth",46);
             m.insertEntry("launcher","start","bluetooth",46);
             m.insertEntry("launcher","stop","bluetooth",46);
-
+            //47 already used
         }
 
     }
@@ -185,7 +185,7 @@ public class GetAllEntries{
             case 5:
                 solution = "Tap the 3-dot button at the upper right corner.\n" +
                         "Go to Settings > Profile \n" +
-                        "Click on the Edit icon (Pencil)";
+                        "Click on the Edit icon (Pencil) present on the image";
                 break;
             case 6:
                 solution = "To view DP go to Settings > Profile\n"+
@@ -303,6 +303,8 @@ public class GetAllEntries{
 
                 break;
             case 46:	solution= "Hold the notification bar on the top on the screen and drag it down\nTap the Bluetooth option to enable it.";
+                break;
+            case 47:    solution= "Inorder to make someone else the admin, you should already be one of the admin of the group.\nIf you are then press and hold the group name.\nClick on 'Group info'\nPress and hold member's name.\nClick on 'make admin'";
                 break;
             default: solution = "qwertyuiopasdfghjklzxcvbnm";
         }
